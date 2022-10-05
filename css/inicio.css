@@ -15,6 +15,7 @@
     font-family: Raj-Me;
 }
 
+
 .titulo span {
     color: var(--verde);
 }
@@ -23,6 +24,12 @@
     color: white;
     font-family: Raj-Me;
     font-size: 20px;
+    -webkit-box-shadow: 3px 9px 28px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 9px 28px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 9px 28px 0px rgba(0,0,0,0.75);
+    padding: 80px;
+    border-radius: var(--bordes);
+
 }
 
 .boton_txt {
@@ -50,8 +57,18 @@
 .boton_txt:hover {
     background-color: var(--verde);
     color: black;
+    transition: 2s;
+    -webkit-box-shadow: 3px 9px 28px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 9px 28px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 9px 28px 0px rgba(0,0,0,0.75); 
 }
 
 .boton_txt:hover>.ico_usu {
    color: black;
+   transition: 2s;
 }
+
+.main {
+    margin-left: 372px;
+}
+
