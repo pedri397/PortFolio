@@ -9,11 +9,38 @@
 }
 
 
+
+
 .titulo {
     color: white;
     font-size: 45px;
     font-family: Raj-Me;
+    /* animation: mover-derecha 2s ease-in; */
+
 }
+
+/* @keyframes mover-derecha {
+    0%{
+        margin-left: 700px;
+    }    
+} */
+
+/* QUE SE MUEVAN LOS ELEMENTOS AL HACER SCROLL*/
+/* .box__mover {
+    transform: translateX(150%);
+    transition: transform 1.5s ease;
+}
+
+.box__enseñar {
+    transform: translateX(0%);
+}
+
+.box__mover:nth-of-type(even){
+    transform: translateX(-150%);
+} */
+
+/*-----------------------------------------------*/
+
 
 
 .titulo span {
@@ -29,8 +56,17 @@
     box-shadow: 3px 9px 28px 0px rgba(0,0,0,0.75);
     padding: 80px;
     border-radius: var(--bordes);
-
+    /* animation: opacidad 2s ease-in; */
 }
+/* 
+@keyframes opacidad {
+    0% {
+        color: rgba(255, 255, 255, 0);
+        -webkit-box-shadow: 3px 9px 28px 0px rgba(0, 0, 0, 0);
+        -moz-box-shadow: 3px 9px 28px 0px rgba(0, 0, 0, 0);
+        box-shadow: 3px 9px 28px 0px rgba(0, 0, 0, 0);
+}
+} */
 
 .boton_txt {
     margin-top: 35px;
@@ -39,6 +75,7 @@
     text-align: center;
     padding: 10px;
     border-radius: var(--bordes);
+    animation: mover-derecha 2s ease-in;
 }
 
 .ico_usu {
@@ -72,3 +109,19 @@
     margin-left: 372px;
 }
 
+.sobremi {
+    color: var(--verde);
+}
+
+.sobremi_txt {
+    width: 40%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 50px;
+}
+
+.boton_sobre {
+    margin: auto;
+    margin-top: 40px;
+}

@@ -22,6 +22,7 @@ html {
 body {
     margin: 0;
     background-color: var(--fondo);
+    overflow-x: hidden;
 }
 
 .container {
@@ -36,6 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 100;
 }
 
 .header_section {

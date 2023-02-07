@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./css/inicio.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 
-    <div class="container">
+    <div class="container" id="container">
         <header class="header">
 
             <section class="header_section">
@@ -24,7 +26,7 @@
 
             <ul class="menu_ul">
                 <li class="menu_li">
-                    <a class="li_a" href="#inicioT">Inicio</a>
+                    <a class="li_a" id="li_a" href="#inicioT">Inicio</a>
                 </li>
                 <li class="menu_li">
                     <a class="li_a" href="#sobre">Sobre Mi</a>
@@ -45,28 +47,51 @@
 
             <section class="inicio">
 
-                <h2 class="titulo" id="inicioT"> Soy <span> Pepito Pérez</span> </h2>
+                <h2 data-aos="fade-left" class="titulo " id="inicioT"> Soy <span> Pepito Pérez</span> </h2>
 
-                <article class="inicio_txt">Aqui contamos un poco quien soy...
+                <article data-aos="fade-right" class="inicio_txt">Aqui contamos un poco quien soy...
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi odio voluptate hic aliquam eum excepturi perferendis autem voluptas nam libero aut ad fugit rerum at, aperiam doloremque. Voluptatibus, architecto a. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, perspiciatis odio numquam fugit harum similique beatae error sequi? Doloribus sit, quibusdam ut consequatur in reiciendis voluptates distinctio odit eaque quasi.
                 </article>
 
                
-                <a class="boton_txt" href="#sobre">Sobre mi <i class="home__fas fas fa-user ico_usu"></i></a>
+                <a class="boton_txt" data-aos="fade-left" href="#sobre">Sobre mi <i class="home__fas fas fa-user ico_usu"></i></a>
 
             </section>
 
             <section class="inicio">
 
-                <h2 class="titulo" id="sobre"> Soy <span> Pepito Pérez</span> </h2>
+                <h2 class="titulo" id="sobre" data-aos="fade-left"> Sobre <span> Mi</span> </h2>
+
+                <article data-aos="fade-right" class="inicio_txt sobremi_txt">
+                    <p class="txt__sobremi">Nombre : <span class="sobremi"> Pepito Perez</span></p>
+
+                    <p class="txt__sobremi">Edad : <span class="sobremi"> 22</span></p>
+
+                    <p class="txt__sobremi">Formacion : <span class="sobremi"> Tecnico Superior en DAW</span></p>
+
+                    <p class="txt__sobremi">Perfil : <span class="sobremi"> Front-end Developer</span></p>
+
+                    <p class="txt__sobremi">Idioma : <span class="sobremi"> Ingles</span></p>
+
+                    <p class="txt__sobremi">Hobies : <span class="sobremi"> Cazar <gamusinos class=""></gamusinos></span></p>
+ 
+                </article>
+
+                <a class="boton_txt boton_sobre" data-aos="fade-left" href="#sobre">Descargar CV <i class="aboutdata__fas fas fa-download ico_usu"></i>
 
                 
-
             </section>
 
         </main>
     
     </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
     <script src="./js/script.js"></script>
 </body>
 </html>
